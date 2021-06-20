@@ -1,0 +1,106 @@
+<head>
+    <!-- MDUI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+    
+    <!-- MDUI JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+    .title{
+        text-align: center;
+        font-size: 50px;
+        margin-top: -100px;
+    }
+    .select-box{
+        margin-top:15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #button-1{
+       left: 30%;
+    }
+    </style>
+</head>
+<h1 class="title">游戏排行榜</h1>
+<div class="mdui-table-fluid">
+    <table class="mdui-table mdui-table-hoverable">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>用户ID</th>
+                <th>用户名</th>
+                <th>获得的分数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="n1">
+                <td>No.1</td>
+                <td>{{user1.id}}</td>
+                <td>{{user1.username}}</td>
+                <td>{{user1.score}}</td>
+            </tr>
+            <tr id="n2">
+                <td>No.2</td>
+                <td>{{user2.id}}</td>
+                <td>{{user2.username}}</td>
+                <td>{{user2.score}}</td>
+            </tr>
+            <tr id="n3">
+                <td>No.3</td>
+                <td>{{user3.id}}</td>
+                <td>{{user3.username}}</td>
+                <td>{{user3.score}}</td>
+            </tr>
+            <tr>
+                <td>No.4</td>
+                <td>{{user4.id}}</td>
+                <td>{{user4.username}}</td>
+                <td>{{user4.score}}</td>
+            </tr>
+            <tr>
+                <td>No.5</td>
+                <td>{{user5.id}}</td>
+                <td>{{user5.username}}</td>
+                <td>{{user5.score}}</td>
+            </tr>
+            <tr>
+                <td>No.6</td>
+                <td>{{user6.id}}</td>
+                <td>{{user6.username}}</td>
+                <td>{{user6.score}}</td>
+            </tr>
+            <tr>
+                <td>No.7</td>
+                <td>{{user7.id}}</td>
+                <td>{{user7.username}}</td>
+                <td>{{user7.score}}</td>
+            </tr>
+            <tr>
+                <td>No.8</td>
+                <td>{{user7.id}}</td>
+                <td>{{user7.username}}</td>
+                <td>{{user7.score}}</td>
+            </tr>
+            <tr>
+                <td>No.9</td>
+                <td>{{user7.id}}</td>
+                <td>{{user7.username}}</td>
+                <td>{{user7.score}}</td>
+            </tr>
+            <tr>
+                <td>No.10</td>
+                <td>{{user7.id}}</td>
+                <td>{{user7.username}}</td>
+                <td>{{user7.score}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="select-box">
+    <a href="/game" class="btn btn-default btn-game" id="button-1">开始游戏</a>
+    <a href="/profile" class="btn btn-default btn-Score"id="button-2">返回菜单</a>
+</div>
